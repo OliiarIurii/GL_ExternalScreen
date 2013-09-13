@@ -12,10 +12,12 @@
 		2536DB8D17E36E6800E61AD5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2536DB8C17E36E6800E61AD5 /* CoreGraphics.framework */; };
 		2536DB9317E36E6800E61AD5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2536DB9117E36E6800E61AD5 /* InfoPlist.strings */; };
 		2536DB9517E36E6800E61AD5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2536DB9417E36E6800E61AD5 /* main.m */; };
-		2536DB9917E36E6800E61AD5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2536DB9817E36E6800E61AD5 /* AppDelegate.m */; };
 		2536DB9B17E36E6800E61AD5 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2536DB9A17E36E6800E61AD5 /* Default.png */; };
 		2536DB9D17E36E6800E61AD5 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2536DB9C17E36E6800E61AD5 /* Default@2x.png */; };
 		2536DB9F17E36E6800E61AD5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2536DB9E17E36E6800E61AD5 /* Default-568h@2x.png */; };
+		2536DBAB17E36E9800E61AD5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2536DBA617E36E9800E61AD5 /* AppDelegate.m */; };
+		2536DBAC17E36E9800E61AD5 /* ExternalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2536DBA817E36E9800E61AD5 /* ExternalViewController.m */; };
+		2536DBAD17E36E9800E61AD5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2536DBAA17E36E9800E61AD5 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,11 +29,15 @@
 		2536DB9217E36E6800E61AD5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2536DB9417E36E6800E61AD5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2536DB9617E36E6800E61AD5 /* ExternalBonjourScreen-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ExternalBonjourScreen-Prefix.pch"; sourceTree = "<group>"; };
-		2536DB9717E36E6800E61AD5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		2536DB9817E36E6800E61AD5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2536DB9A17E36E6800E61AD5 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		2536DB9C17E36E6800E61AD5 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		2536DB9E17E36E6800E61AD5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2536DBA517E36E9800E61AD5 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2536DBA617E36E9800E61AD5 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2536DBA717E36E9800E61AD5 /* ExternalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExternalViewController.h; sourceTree = "<group>"; };
+		2536DBA817E36E9800E61AD5 /* ExternalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExternalViewController.m; sourceTree = "<group>"; };
+		2536DBA917E36E9800E61AD5 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2536DBAA17E36E9800E61AD5 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +84,12 @@
 		2536DB8E17E36E6800E61AD5 /* ExternalBonjourScreen */ = {
 			isa = PBXGroup;
 			children = (
-				2536DB9717E36E6800E61AD5 /* AppDelegate.h */,
-				2536DB9817E36E6800E61AD5 /* AppDelegate.m */,
+				2536DBA517E36E9800E61AD5 /* AppDelegate.h */,
+				2536DBA617E36E9800E61AD5 /* AppDelegate.m */,
+				2536DBA717E36E9800E61AD5 /* ExternalViewController.h */,
+				2536DBA817E36E9800E61AD5 /* ExternalViewController.m */,
+				2536DBA917E36E9800E61AD5 /* ViewController.h */,
+				2536DBAA17E36E9800E61AD5 /* ViewController.m */,
 				2536DB8F17E36E6800E61AD5 /* Supporting Files */,
 			);
 			path = ExternalBonjourScreen;
@@ -165,7 +175,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2536DB9517E36E6800E61AD5 /* main.m in Sources */,
-				2536DB9917E36E6800E61AD5 /* AppDelegate.m in Sources */,
+				2536DBAB17E36E9800E61AD5 /* AppDelegate.m in Sources */,
+				2536DBAC17E36E9800E61AD5 /* ExternalViewController.m in Sources */,
+				2536DBAD17E36E9800E61AD5 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +257,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ExternalBonjourScreen/ExternalBonjourScreen-Prefix.pch";
 				INFOPLIST_FILE = "ExternalBonjourScreen/ExternalBonjourScreen-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -256,6 +269,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ExternalBonjourScreen/ExternalBonjourScreen-Prefix.pch";
 				INFOPLIST_FILE = "ExternalBonjourScreen/ExternalBonjourScreen-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
