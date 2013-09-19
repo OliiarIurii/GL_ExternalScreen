@@ -157,7 +157,11 @@
     ExternalViewController *vc = [[[ExternalViewController alloc] initWithFrame:screenBounds] autorelease];
     
     vc.service = [self getServeiceByIndexPath:indexPath];
-    
+    if (externalWindow == nil) {
+        self.externalWindow = [[[UIWindow alloc] initWithFrame:screenBounds] autorelease];
+        self.externalWindow.screen = secondScreen;
+    }
+    vc.service = [self getServeiceByIndexPath:indexPath];
     externalWindow.rootViewController = vc;
     externalWindow.hidden = NO;
 }
@@ -185,7 +189,8 @@
     NSArray *types = [netServices allKeys];
     NSString *type = [types objectAtIndex:indexPath.section];
     NSArray *services = [netServices objectForKey:type];
-    return [services objectAtIndex:indexPath.row];
+    NSNetService *result = [services objectAtIndex:indexPath.row];
+    return result;
 }
 
 @end

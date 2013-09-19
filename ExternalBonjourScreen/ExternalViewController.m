@@ -33,14 +33,16 @@
     self.view = [[[UIView alloc] initWithFrame:frame] autorelease];
     self.textView = [[[UITextView alloc] initWithFrame:frame] autorelease];
     textView.editable = NO;
+    textView.text = [NSString stringWithFormat:@"%@ %@ %@", service.type,service.domain,service.name];
     [self.view addSubview:textView];
 }
 
 - (void)setService:(NSNetService *)service_ {
     if (service != service_) {
         [service release];
-        service = [service retain];
+        service = [service_ retain];
         service.delegate = self;
+        self.textView.text = [NSString stringWithFormat:@"%@ %@ %@", service.type,service.domain,service.name];
     }
 }
 
